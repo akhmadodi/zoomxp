@@ -1,0 +1,95 @@
+/*
+	Zoom Custom Style
+	Created by: Rochman Ryeka, rochman.ryeka@gmail.com
+*/
+
+/*Font Style*/
+
+	/*SourceSansPro*/
+	@font-face {
+	    font-family: 'SourceSansPro';
+	    src:url('../fonts/SourceSansPro/SourceSansPro-Regular.otf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	@font-face {
+	    font-family: 'SourceSansPro';
+	    src:url('../fonts/SourceSansPro/SourceSansPro-Bold.otf') format('truetype');
+	    font-weight: bold;
+	    font-style: normal;
+	}
+	@font-face {
+	    font-family: 'SourceSansPro';
+	    src:url('../fonts/SourceSansPro/SourceSansPro-Light.otf') format('truetype');
+	    font-weight: lighter;
+	    font-style: normal;
+	}
+
+	/*Comfortaa*/
+	@font-face {
+	    font-family: 'Comfortaa';
+	    src:url('../fonts/Comfortaa/Comfortaa-Regular.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	@font-face {
+	    font-family: 'Comfortaa';
+	    src:url('../fonts/Comfortaa/Comfortaa-Bold.ttf') format('truetype');
+	    font-weight: bold;
+	    font-style: normal;
+	}
+	@font-face {
+	    font-family: 'Comfortaa';
+	    src:url('../fonts/Comfortaa/Comfortaa-Light.ttf') format('truetype');
+	    font-weight: lighter;
+	    font-style: normal;
+	}
+
+/*End Font Style*/
+
+/*Base Style*/
+body { overflow-x: hidden; }
+h1,h2,h3,h4,h5,h6 { font-family: 'SourceSansPro'; font-weight: bold; }
+p { font-family: 'SourceSansPro'; }
+.font_ssp { font-family: 'SourceSansPro' !important; }
+.font_cft { font-family: 'Comfortaa' !important; }
+.color_main { color: #EE3937 !important; }
+.bg_main { background-color: #EE3937 !important; }
+.fw_reg { font-weight: normal !important; }
+.fw_bold { font-weight: bold !important; }
+.fw_light { font-weight: lighter !important; }
+.abs_hvmid { position: absolute; left: 50%; top: 50%; transform: translateX(-50%)translateY(-50%); -ms-transform: translateX(-50%)translateY(-50%); -webkit-transform: translateX(-50%)translateY(-50%); }
+
+/*Global Style*/
+#footer { background-color: #333333; padding: 30px 0 60px 0; color: #ccc; }
+#footer .logo { margin-bottom: 25px; }
+#footer .soc_med p { margin-bottom: 15px; }
+#footer .soc_med .content a { margin-right: 35px; display: inline-block; }
+#footer .soc_med .content a:last-child { margin-right: 0; }
+#footer .soc_med .content a img { height: 30px; }
+#footer #input_subscribe { margin-bottom: 20px; }
+#footer #input_subscribe input { height: 32px; border-radius: 0; }
+#footer #input_subscribe a { background-color: #39B54A; color: #FFF; border: none; border-radius: 0; }
+#footer #menu_list h4 { border-bottom: 1px solid #fff; padding-bottom: 3px; color: #FFF; }
+#footer #menu_list ul li { margin-bottom: 4px; }
+#footer #menu_list ul li a { font-size: 11px; color: #b8b8b8; }
+
+input[type="text"]:hover, input[type="password"]:hover, select:hover, input[type="text"]:focus, input[type="password"]:focus, select:focus, textarea:focus { border: 1px solid #EE3937; }
+
+.s_box1 .circle_s1 { display: table-cell; }
+.s_box1 .s_box1_text { display: table-cell; padding-left: 20px; vertical-align: middle; font-size: 13px; }
+.circle_s1 { background-color: #F9E7D9; width: 60px; padding: 15px; border-radius: 50%; }
+
+@media(max-width: 991px){
+	.c_list header h2 { padding-top: 20px; font-size: 24px; }
+	#footer { padding: 30px 0 15px 0; }
+	#footer .logo { float: left; }
+	#footer .soc_med { float: right; }
+}
+
+@media(max-width: 767px){
+	.c_list header h2 { padding-top: 0; font-size: 24px; }
+	#footer .soc_med { float: none; }
+
+	#footer .row { text-align: center; }
+}
