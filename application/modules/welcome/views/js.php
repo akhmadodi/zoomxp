@@ -1,9 +1,7 @@
-<!-- JS -->
-<script src="<?php echo base_url(); ?>public/frontend/js/jquery-3.2.1.min.js"></script>
-<script src="<?php echo base_url(); ?>public/frontend/js/owl.carousel2.js"></script>
-<script src="<?php echo base_url(); ?>public/frontend/js/custom_js.js"></script>
+<script src="<?php echo base_url(); ?>public/assets/js/jquery-3.2.1.min.js"></script>
+<script src="<?php echo base_url(); ?>public/assets/js/owl.carousel2.js"></script>
+<script src="<?php echo base_url(); ?>public/assets/js/custom_js.js?1.1<?php echo rand(); ?>"></script>
 
-<!-- Function -->
 <script type="text/javascript">
     $(document).ready(function(){
         $('#head_owl').owlCarousel({
@@ -24,7 +22,7 @@
             autoplayTimeout:10000,
             responsiveClass:true,
             nav: true,
-            navText: ["<img src='<?php echo base_url(); ?>public/frontend/img/nav_arrow_left.png'>","<img src='<?php echo base_url(); ?>public/frontend/img/nav_arrow_right.png'>"],
+            navText: ["<img src='<?php echo base_url(); ?>public/assets/img/nav_arrow_left.png'>","<img src='<?php echo base_url(); ?>public/assets/img/nav_arrow_right.png'>"],
             responsive:{
                 992:{
                     items:3,

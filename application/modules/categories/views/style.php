@@ -1,5 +1,18 @@
-<style>
-    .banner { height: 550px; background:url(<?php echo base_url(); ?>public/frontend/img/header_bg2.png); background-size: cover; background-position-x: 46%; }
+<!-- CSS -->
+<link rel="stylesheet" href="<?php echo base_url(); ?>public/assets/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>public/assets/css/zoom.css?1.3<?php echo rand(); ?>" type="text/css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>public/assets/css/barrating.css" type="text/css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>public/assets/css/bootstrap-slider.css" type="text/css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>public/assets/css/custom_style.css?1.1<?php echo rand(); ?>" type="text/css">
+
+<!-- this is zoom gtm for whole website -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NC2F2B" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<!-- Custom Style -->
+<style type="text/css">
+    .banner { height: 550px; background:url(<?php echo base_url(); ?>public/assets/img/header_bg2.png); background-size: cover; background-position-x: 46%; }
     .banner h2 { font-size: 38px; margin: 0; }
     .banner.g_row1:before { content: ""; position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.2); z-index: 1; }
     .banner .g_c_mid { width: 550px; top: 50%; }
@@ -16,10 +29,11 @@
 
     /*Section 2*/
     #sc_content { padding-top: 30px; margin-bottom: 30px; }
-    .box_filter { margin-bottom: 30px; }
-    .box_filter .bf_head { background: #EF5E5D; text-align: center; border-top-left-radius: 15px; border-top-right-radius: 15px; border: 1px solid #DDD; border-bottom: none; padding: 10px 20px; cursor: pointer; }
+    .box_filter { margin-bottom: 15px; }
+    .box_filter .bf_head { background: #EF5E5D; text-align: center; border-top-left-radius: 15px; border-top-right-radius: 15px; border: 1px solid #DDD; border-bottom: none; padding: 10px 20px; cursor: pointer; transition: 0.1s ease-in; }
     .box_filter .bf_head img { display:inline-block; height:15px; position: relative; top: -2px; margin-right: 5px; }
     .box_filter .bf_head p { color: #fff; margin: 0; }
+    .box_filter .bf_head.c_hide { border-radius: 15px; padding: 15px 20px; transition: 0.1s ease-in; }
     .box_filter .bf_body { background: #FFF; text-align: center; padding: 10px 20px; border: 1px solid #DDD; border-top: none; }
     #sorter { display: inline-block; background: #fff; padding: 6px; border-radius: 15px; border: 1px solid #DDD; width: 90px; position: relative; overflow: hidden; }
     #sorter i { position: absolute; background: #F1615F; color: #FFF; border-top-left-radius: 10px; border-bottom-left-radius: 10px; height: 100%; width: 30px; left: 0; top: 0; padding: 6px; }
@@ -58,7 +72,7 @@
     #no_filter_text { margin: 0; display: none; }
 
     @media(max-width: 991px){
-        .banner,.banner .item .m_bg { height: 400px; }
+        .banner,.banner .item .m_bg { height: 350px; }
         .banner .g_c_mid { width: 90%; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); }
         .banner h2 { font-size: 26px; }
         .banner input { padding-left: 10px; }
@@ -68,6 +82,7 @@
         /*Section 1*/
         #breadcrump { padding-top: 10px; padding-bottom: 5px; }
         .box_content .bc_img { width: 100%; margin-bottom: 10px; }
-        .box_content .bc_desc { padding: 10px 10px 40px 10px; }
-    }
+        /*.box_content .bc_desc { padding: 10px 10px 40px 10px; }*/
+        .box_content .bc_desc { padding: 10px; }
+    }    
 </style>

@@ -1,8 +1,10 @@
-<script src="<?php echo base_url(); ?>public/frontend/js/jquery-3.2.1.min.js"></script>
-<script src="<?php echo base_url(); ?>public/frontend/js/barrating.js"></script>
-<script src="<?php echo base_url(); ?>public/frontend/js/bootstrap-slider.js"></script>
-<script src="<?php echo base_url(); ?>public/frontend/js/custom_js.js"></script>
+<!-- JS -->
+<script src="<?php echo base_url(); ?>public/assets/js/jquery-3.2.1.min.js"></script>
+<script src="<?php echo base_url(); ?>public/assets/js/barrating.js"></script>
+<script src="<?php echo base_url(); ?>public/assets/js/bootstrap-slider.js"></script>
+<script src="<?php echo base_url(); ?>public/assets/js/custom_js.js?1.1<?php echo rand(); ?>"></script>
 
+<!-- Function -->
 <script type="text/javascript">
     $(document).ready(function(){
         $('.star-rating').barrating({
@@ -19,13 +21,26 @@
 
         $('.bf_head').on('click',function(){
             if ($(this).hasClass('c_hide')) {
-                $(this).removeClass('c_hide').find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                $(this).removeClass('c_hide').find('i').addClass('glyphicon-chevron-up').removeClass('glyphicon-chevron-down');
                 $(this).next().slideDown('fast');
             }else{
-                $(this).addClass('c_hide').find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                $(this).addClass('c_hide').find('i').addClass('glyphicon-chevron-down').removeClass('glyphicon-chevron-up');
                 $(this).next().slideUp('fast');
             };
         });
+        function resize_bf_head(){
+            if($(document).width() < 768){
+                $('.bf_head').addClass('c_hide').find('i').addClass('glyphicon-chevron-down').removeClass('glyphicon-chevron-up');
+                $('.bf_head').next().slideUp('fast');
+            }else{
+                $('.bf_head').removeClass('c_hide').find('i').addClass('glyphicon-chevron-up').removeClass('glyphicon-chevron-down');
+                $('.bf_head').next().slideDown('fast');
+            }
+        }
+        resize_bf_head();
+        $(window).on('resize',function(){
+            resize_bf_head();
+        })
 
         function no_filter_text(){
             if ($('#your_filter').serialize()!="") {
@@ -70,5 +85,5 @@
         });
 
         no_filter_text();
-    })
+    });    
 </script>

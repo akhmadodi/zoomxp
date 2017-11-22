@@ -27,4 +27,13 @@ class Master_model extends CI_Model
     function insert_data($table=null, $data=null) {
         $this->db->insert($table, $data);
     }
+
+    function update_table($where, $data, $table) {
+        $this->db->where($where)->update($table, $data);
+        return false;
+    }
+
+    function delete_data($where_arr=null, $table=null) {
+        $this->db->where($where_arr)->delete($table);       
+    }
 }

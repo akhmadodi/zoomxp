@@ -1,6 +1,18 @@
-<style>
+<!-- CSS -->
+<link rel="stylesheet" href="<?php echo base_url(); ?>public/assets/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>public/assets/css/zoom.css?1.3<?php echo rand(); ?>" type="text/css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>public/assets/css/owl.carousel2.min.css" type="text/css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>public/assets/css/custom_style.css?1.1<?php echo rand(); ?>" type="text/css">
+
+<!-- this is zoom gtm for whole website -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NC2F2B" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<!-- Custom Style -->
+<style type="text/css">
     .banner,.banner .item .m_bg { height: 500px; }
-    .banner.g_row1:before { content: ""; position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.2); z-index: 1; }
+    .banner.g_row1 .item .m_bg:before { content: ""; position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.2); z-index: 1; }
     .banner .g_c_mid { width: 550px; }
     .banner button { color: #FFF; }
 
@@ -27,7 +39,7 @@
     .box_thumb2 .bt2_content p { margin-bottom: 0; }
 
     /*Section 3*/
-    .bg_img { min-height: 100px; background-image: url(<?php echo base_url(); ?>public/frontend/img/section4_bg.png); background-size: cover; background-position-x: 50%; position: relative; }
+    .bg_img { min-height: 100px; background-image: url(<?php echo base_url(); ?>public/assets/img/section4_bg.png); background-size: cover; background-position-x: 50%; position: relative; }
     .bg_img:before { content: ""; position: absolute; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3); }
     #box_voc { padding-top: 80px; padding-bottom: 80px; }
     #box_voc .button_voc { display: inline-block; background: #FF1D25; padding: 15px 50px; text-align: center; border-radius: 50px; color: #FFF; width: 100%; max-width: 450px; box-shadow: 3px 3px 5px rgba(0,0,0,0.5); }
@@ -84,6 +96,24 @@
     }
 
     @media(max-width: 767px){
+        .banner,.banner .item .m_bg { height: 350px; }
+        hr { margin-top: 10px; margin-bottom: 10px; }
 
+        .index_list .g_main { margin-bottom: 0 !important; }
+
+        .banner+div { padding: 5px; }
+        header.t_mid { margin-bottom: 10px !important; }
+        header h2 { margin-top: 10px !important; margin-bottom: 0 !important; }
+        header h3 { margin-top: 0 !important; margin-bottom: 15px !important; }
+
+        .xs_nopad { padding: 0px; }
+        .box_thumb1 { margin-bottom: 5px; max-width: 100%; }
+
+        .box_thumb2 { margin-bottom: 10px; }
+
+        #box_voc { padding-top: 30px; padding-bottom: 20px; }
+
+        #sec4 .g_main { margin-bottom: 15px !important; }
+        #foot_owl .owl-nav img { opacity: 0.7; width: 25px; }
     }
 </style>

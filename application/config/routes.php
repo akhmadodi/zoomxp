@@ -45,8 +45,15 @@ $route['users'] = "auth/users";
 $route['activities'] = "activity";
 $route['activities/add'] = "activity/add";
 
-$route['categories/(:any)'] = "categories";
+// $route['outdoor_experience/(:any)'] = "categories/outdoor_experience";
 
-$route['gift_voucher'] = "gift";
+// $route['gift_vouchers'] = "gift";
+$route['about'] = "welcome/about";
+
+
+// $route['categories'] = "welcome";
+$route['categories/(:any)'] = "categories";
+$route['experience'] = "categories";
+$route['activity_detail/(:any)'] = "activity/activity_detail";
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

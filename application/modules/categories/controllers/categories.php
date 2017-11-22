@@ -7,18 +7,21 @@ class Categories extends CI_Controller {
 
 		$this->load->library('auth/tank_auth');
 		$this->lang->load('tank_auth');
+		$this->load->library('encrypt');
 	}	
 
-	public function index() {
+	function index() {
+		$uri = $this->uri->segment(2);
 		$data = array(
-			'title' => 'Zoom - Activities, Tours, Attractions and Things To Do',
-			'custom_style' => 'categories/style',
+			'title' => 'ZOOM - '.ucwords($uri),
+			'style' => 'categories/style',
 			'js' => 'categories/js',
-			'content' => 'categories'
+			'content' => 'categories/content',
+			'categories' => strtolower($uri)
 		);
-
-		$this->load->view('includes/frontend/template', $data);
+		$this->load->view('includes/template', $data);
 	}
+		
 }
 
 /* End of file welcome.php */
