@@ -168,75 +168,73 @@
             <header class="t_mid" style="margin-bottom:30px">
                 <h2 class="font_cft color_main"><span>GET INSPIRED WITH OUR</span><br>STORIES</h2>
             </header>
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1" style="padding: 0;">
-                    <div id="foot_owl" class="owl-carousel owl-theme">
-                        <div class="item">
-                            <a href="<?php echo base_url(); ?>activity_detail/<?php echo base64_encode('A001'); ?>">
-                                <div class="box_thumb3">
-                                    <img src="<?php echo base_url(); ?>public/assets/img/section5_1.png" class="img-responsive">
-                                    <div class="box_content bg_main">
-                                        <h5>Bali Surfing House</h5>
-                                        <p>The shore looked so far away, and soon it was tough just trying to stay afloat...</p>
-                                    </div>
+            <div class="col-md-10 col-md-offset-1" style="padding: 0;">
+                <div id="foot_owl" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="<?php echo base_url(); ?>activity_detail/<?php echo base64_encode('A001'); ?>">
+                            <div class="box_thumb3">
+                                <img src="<?php echo base_url(); ?>public/assets/img/section5_1.png" class="img-responsive">
+                                <div class="box_content bg_main">
+                                    <h5>Bali Surfing House</h5>
+                                    <p>The shore looked so far away, and soon it was tough just trying to stay afloat...</p>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="<?php echo base_url(); ?>activity_detail/<?php echo base64_encode('A001'); ?>">
-                                <div class="box_thumb3">
-                                    <img src="<?php echo base_url(); ?>public/assets/img/section5_2.png" class="img-responsive">
-                                    <div class="box_content bg_main">
-                                        <h5>Complete Serenity</h5>
-                                        <p>The experience was just mind blowing amidst the jungle with serenity your companion...</p>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="<?php echo base_url(); ?>activity_detail/<?php echo base64_encode('A001'); ?>">
+                            <div class="box_thumb3">
+                                <img src="<?php echo base_url(); ?>public/assets/img/section5_2.png" class="img-responsive">
+                                <div class="box_content bg_main">
+                                    <h5>Complete Serenity</h5>
+                                    <p>The experience was just mind blowing amidst the jungle with serenity your companion...</p>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="<?php echo base_url(); ?>activity_detail/<?php echo base64_encode('A001'); ?>">
-                                <div class="box_thumb3">
-                                    <img src="<?php echo base_url(); ?>public/assets/img/section5_3.png" class="img-responsive">
-                                    <div class="box_content bg_main">
-                                        <h5>Astonishing Cultural Night</h5>
-                                        <p>Hear an expectant hush descend over the audience as troupes of talented dancers...</p>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="<?php echo base_url(); ?>activity_detail/<?php echo base64_encode('A001'); ?>">
+                            <div class="box_thumb3">
+                                <img src="<?php echo base_url(); ?>public/assets/img/section5_3.png" class="img-responsive">
+                                <div class="box_content bg_main">
+                                    <h5>Astonishing Cultural Night</h5>
+                                    <p>Hear an expectant hush descend over the audience as troupes of talented dancers...</p>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="<?php echo base_url(); ?>activity_detail/<?php echo base64_encode('A001'); ?>">
-                                <div class="box_thumb3">
-                                    <img src="<?php echo base_url(); ?>public/assets/img/section5_1.png" class="img-responsive">
-                                    <div class="box_content bg_main">
-                                        <h5>Bali Surfing House</h5>
-                                        <p>The shore looked so far away, and soon it was tough just trying to stay afloat...</p>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="<?php echo base_url(); ?>activity_detail/<?php echo base64_encode('A001'); ?>">
+                            <div class="box_thumb3">
+                                <img src="<?php echo base_url(); ?>public/assets/img/section5_1.png" class="img-responsive">
+                                <div class="box_content bg_main">
+                                    <h5>Bali Surfing House</h5>
+                                    <p>The shore looked so far away, and soon it was tough just trying to stay afloat...</p>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="<?php echo base_url(); ?>activity_detail/<?php echo base64_encode('A001'); ?>">
-                                <div class="box_thumb3">
-                                    <img src="<?php echo base_url(); ?>public/assets/img/section5_2.png" class="img-responsive">
-                                    <div class="box_content bg_main">
-                                        <h5>Complete Serenity</h5>
-                                        <p>The experience was just mind blowing amidst the jungle with serenity your companion...</p>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="<?php echo base_url(); ?>activity_detail/<?php echo base64_encode('A001'); ?>">
+                            <div class="box_thumb3">
+                                <img src="<?php echo base_url(); ?>public/assets/img/section5_2.png" class="img-responsive">
+                                <div class="box_content bg_main">
+                                    <h5>Complete Serenity</h5>
+                                    <p>The experience was just mind blowing amidst the jungle with serenity your companion...</p>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="<?php echo base_url(); ?>activity_detail/<?php echo base64_encode('A001'); ?>">
-                                <div class="box_thumb3">
-                                    <img src="<?php echo base_url(); ?>public/assets/img/section5_3.png" class="img-responsive">
-                                    <div class="box_content bg_main">
-                                        <h5>Astonishing Cultural Night</h5>
-                                        <p>Hear an expectant hush descend over the audience as troupes of talented dancers.....</p>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="<?php echo base_url(); ?>activity_detail/<?php echo base64_encode('A001'); ?>">
+                            <div class="box_thumb3">
+                                <img src="<?php echo base_url(); ?>public/assets/img/section5_3.png" class="img-responsive">
+                                <div class="box_content bg_main">
+                                    <h5>Astonishing Cultural Night</h5>
+                                    <p>Hear an expectant hush descend over the audience as troupes of talented dancers.....</p>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

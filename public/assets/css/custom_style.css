@@ -98,7 +98,7 @@ input[type="text"]:hover, input[type="password"]:hover, select:hover, input[type
 }
 
 @media(max-width: 767px){
-	.c_list header h2 { padding-top: 0; font-size: 24px; }
+	.c_list header h2 { padding-top: 10px; font-size: 24px; }
 	#footer .soc_med { float: none; }
 
 	#footer .row { text-align: center; }

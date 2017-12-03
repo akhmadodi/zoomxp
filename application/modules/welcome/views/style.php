@@ -101,15 +101,15 @@
 
         .index_list .g_main { margin-bottom: 0 !important; }
 
-        .banner+div { padding: 5px; }
+        .banner+div { padding: 15px 5px; }
         header.t_mid { margin-bottom: 10px !important; }
         header h2 { margin-top: 10px !important; margin-bottom: 0 !important; }
         header h3 { margin-top: 0 !important; margin-bottom: 15px !important; }
 
         .xs_nopad { padding: 0px; }
-        .box_thumb1 { margin-bottom: 5px; max-width: 100%; }
+        .box_thumb1 { margin-bottom: 15px; max-width: 100%; }
 
-        .box_thumb2 { margin-bottom: 10px; }
+        .box_thumb2 { margin-bottom: 15px; }
 
         #box_voc { padding-top: 30px; padding-bottom: 20px; }
 
