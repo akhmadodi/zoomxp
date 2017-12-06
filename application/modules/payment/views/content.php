@@ -1,14 +1,14 @@
 <div class="wrapper_content">
     <section class="container" style="padding-top: 60px;">
         <div class="col-md-offset-1 col-md-10">
-            <h3 class="font_cft yc">Your Chart</h3>
+            <h3 class="font_cft yc">Your Cart</h3>
             <div class="table-responsive">
                 <table id="list_payment">
                     <thead>
                         <tr>
                             <th>Product Description</th>
                             <th class="hidden-xs">Date</th>
-                            <th class="hidden-xs">Quality</th>
+                            <th class="hidden-xs">Quantity</th>
                             <th class="hidden-xs">Subtotal</th>
                             <th class="hidden-xs"></th>
                         </tr>
@@ -28,7 +28,7 @@
                             </td>
                             <td>
                                 <span class="hidden-lg hidden-md hidden-sm">Quantity:</span>
-                                <input class="form-control nquantity" type="number" name="quantity" value="1" style="display:inline-block;width:40px;">
+                                <input class="form-control nquantity" type="number" name="quantity" min="1" value="1">
                             </td>
                             <td class="subtotal">
                                 <span class="hidden-lg hidden-md hidden-sm">Subtotal:<br></span>
@@ -53,7 +53,7 @@
                             </td>
                             <td>
                                 <span class="hidden-lg hidden-md hidden-sm">Quantity:</span><br>
-                                <input class="form-control nquantity" type="number" name="quantity" value="1" style="display:inline-block;width:40px;">
+                                <input class="form-control nquantity" type="number" name="quantity" min="1" value="1">
                             </td>
                             <td class="subtotal">
                                 <span class="hidden-lg hidden-md hidden-sm">Subtotal:</span><br>
@@ -118,14 +118,14 @@
                                         <input class="radio_s1" type="radio" name="payment_method" value="2" id="pm_2">
                                         <label for="pm_2">Bank Transfer</label>
                                         <div class="pm_content">
-                                            
+
                                         </div>
                                     </div>
                                     <div class="col-xs-12">
                                         <input class="radio_s1" type="radio" name="payment_method" value="3" id="pm_3">
                                         <label for="pm_3">Over The Counter</label>
                                         <div class="pm_content">
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -149,7 +149,8 @@
                                         <tr>
                                             <td colspan="2" class="gift_code">
                                                 <label>Gift Code</label><br>
-                                                <input type="text" name="gift_code" class="form-control"> <a href="javascript:;" class="gc_apply">Apply</a>
+                                                <input type="text" name="gift_code" class="form-control">
+                                                <button class="btn btn-success btn-sm" style="margin-top: -5px;">Apply</button>
                                             </td>
                                         </tr>
                                     </tbody>

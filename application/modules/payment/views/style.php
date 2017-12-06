@@ -44,12 +44,12 @@
     .order_summary tr td.gift_code input { margin-right: 15px; width: 50%; display: inline-block; }
     #submit_payment { width: 100%; position: absolute; left: 0; bottom: -40px; background: #e6212b; color: #FFF; border-top: none; border-radius: 0; }
 
-    .nquantity { text-align: center; }
-    .nquantity::-webkit-inner-spin-button, 
-    .nquantity::-webkit-outer-spin-button { 
-      -webkit-appearance: none; 
-      margin: 0; 
-    }
+    .nquantity { text-align: center; padding: 6px 6px; display:inline-block;width:55px; }
+    /*.nquantity::-webkit-inner-spin-button,
+    .nquantity::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }*/
 
     @media(max-width: 767px){
         .wrapper_content .container { padding-left: 0; padding-right: 0; }

@@ -10,7 +10,7 @@ class Activity extends CI_Controller {
 		date_default_timezone_set('Asia/Jakarta');
 		$this->load->helper(array('common_function'));
 		$this->load->library('encrypt');
-	}	
+	}
 
 	public function index() {
 
@@ -47,7 +47,7 @@ class Activity extends CI_Controller {
 		$bank_account = '1099888123123';
 		$bank_name = 'PT Bank Central Asia, Tbk';
 		$account_owner = 'Alan Darma Saputra';
-		
+
 		$this->master_model->insert_data('payment_detail',array(
 			'id' => $id,
 			'submit_date' => date('Y-m-d H:i:s'),
@@ -155,7 +155,7 @@ class Activity extends CI_Controller {
 		$last_id = $this->master_model->last_id_table('id', array_merge($where_date, $where_time), $table_name);
 
 		if ( !isset($last_id->row()->id) ) {
-			
+
 			$n = 1;
 
 		} else {
@@ -271,7 +271,7 @@ class Activity extends CI_Controller {
 		);
 
 		$this->load->view('includes/template', $data);
-		
+
 	}
 
 }

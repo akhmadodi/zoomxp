@@ -9,7 +9,7 @@ class Payment extends CI_Controller {
 		$this->load->model('master/master_model');
 		date_default_timezone_set('Asia/Jakarta');
 		$this->load->helper(array('common_function'));
-	}	
+	}
 
 	public function index() {
 
